@@ -1,1 +1,35 @@
+Setting Up Amazon QuickSight:
 
+The first step involved creating a QuickSight account, which is a free process.
+The project required enabling QuickSight's access to Amazon S3, where the dataset was stored. This step was crucial for QuickSight to process the data.
+Uploading Files to Amazon S3:
+
+The dataset and a manifest.json file were uploaded to an S3 bucket.
+The manifest.json file was edited to include the correct S3 URL, ensuring that QuickSight could locate and use the dataset correctly.
+Connecting S3 to QuickSight:
+
+The S3 bucket was connected to QuickSight, and the dataset was imported by specifying the S3 bucket details in the QuickSight interface.
+The manifest.json file played a vital role in this step by providing the correct path to the dataset.
+Creating Visualizations:
+
+The visualizations were created by dragging relevant fields into the QuickSight dashboard's Autograph space.
+An example provided is a graph showing the breakdown of release years, where the release year was placed on the Y-axis, and the type (movie or TV show) was the grouping variable.
+Using Filters:
+
+Filters were applied to the visualizations to sort the data according to specific criteria.
+One visualization included a filter that excluded TV shows and movies added after 2015, focusing on content released before 2015.
+Setting Up a Dashboard:
+
+The final touch involved setting up a dashboard with clear titles for each graph to make the purpose of each chart evident to the viewer.
+The dashboard was published, and it could be exported as a PDF.
+Challenges:
+
+The project highlighted the ease of understanding graphs and charts in QuickSight.
+One unexpected challenge was ensuring the correct S3 URL was set in the manifest.json file, as an incorrect URL would lead to errors.
+Duration:
+The entire project took approximately 40-60 minutes to complete.
+
+Key Tools Used:
+
+Amazon QuickSight: For data visualization.
+Amazon S3: For storing the dataset and manifest.json file.
